@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAIMANOT BELACHEW's Personal Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="profile/17.svg" alt="User" style="width: 250px; height: auto; max-width: 100%; border-radius: 50%;">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="HAIMANOT BELACHEW">HAIMANOT BELACHEW</h1>
+          <p class="title">Senior at Yale studying Computer Science and Math</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+        </button>
+      </div>
+      <div class="sidebar-info_more" data-sidebar-more>
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:haimanot.belachew@yale.edu" class="contact-link">haimanot.belachew@yale.edu</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+14709231554" class="contact-link">(470) -923-1554</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>New Haven, CT</address>
+            </div>
+          </li>
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="github.com/Haimanotbb" class="social-link">
+              <i class="fab fa-github"></i> 
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="linkedin.com/in/haimanot-belachew" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Education</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Research</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Publications</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Skills</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Teaching</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Awards</button>
+          </li>
+        </ul>
+      </nav>
+
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About Me</h2>
+        </header>
+        <section class="about-text">
+          <h2>👋 Hi, I'm HAIMANOT BELACHEW</h2>
+          <p>Senior at Yale studying Computer Science and Math with experience in full-stack development, systems programming, and statistical analysis. Strong foundation and interest in algorithms and advanced math, applied to building scalable applications and data-driven research.</p>
+        </section>
+      </article>
+
+      <article class="education" data-page="education">
+        <header>
+          <h2 class="h2 article-title">
+            <ion-icon name="book-outline"></ion-icon> Education
+          </h2>
+        </header>
+        <section class="timeline" id="education-container">
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Yale University</h4>
+              <span class="graduation-date">Expected Graduation 2026</span>
+              <p class="degree">BS</p>
+              <p class="field">Computer Science and Mathematics</p>
+            </li>
+          </ol>
+        </section>
+      </article>
+
+      <article class="research" data-page="research">
+        <header>
+          <h2 class="h2 article-title">
+            <ion-icon name="flask-outline"></ion-icon> Work Experience
+          </h2>
+        </header>
+        <section class="timeline" id="experience-container">
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Software Engineering Intern</h4>
+              <span class="duration">June 2025 – Aug 2025</span>
+              <p class="institution">Minab IT Solutions</p>
+              <div class="description-container">
+                <ul class="description-list">
+                  <li>Designed and developed a full-stack Food Recipe sharing web application, implementing front-end features (Nuxt3/Vue3, Tailwind CSS) and back-end microservices (Go, Hasura GraphQL, PostgreSQL) with secure authentication and payment integration.</li>
+                  <li>Optimized database schema and table-level permissions for secure access control, and integrated Apollo GraphQL on the frontend to streamline queries, state management, and communication with the backend.</li>
+                </ul>
+              </div>
+              <div class="techniques-container">
+                <span class="technique-tag">Nuxt3</span>
+                <span class="technique-tag">Vue3</span>
+                <span class="technique-tag">Tailwind CSS</span>
+                <span class="technique-tag">Go</span>
+                <span class="technique-tag">Hasura GraphQL</span>
+                <span class="technique-tag">PostgreSQL</span>
+                <span class="technique-tag">Apollo GraphQL</span>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Research Assistant</h4>
+              <span class="duration">May 2024 – Present</span>
+              <p class="institution">Inquisitive Robotics Lab at Yale</p>
+              <div class="description-container">
+                <ul class="description-list">
+                  <li>Conduct human-robot interaction experiments to study the effects of competency and legibility on human kinesthetic feedback and task learning.</li>
+                  <li>Develop and refine data pipelines to preprocess experimental data for statistical analysis. Run statistical tests such as ANOVA and Regression Analysis to evaluate human feedback patterns.</li>
+                </ul>
+              </div>
+              <div class="techniques-container">
+                <span class="technique-tag">Pandas</span>
+                <span class="technique-tag">JMP Pro</span>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Student Tech</h4>
+              <span class="duration">Oct 2023 - Jan 2025</span>
+              <p class="institution">Student Technology Collaborative at Yale</p>
+              <div class="description-container">
+                <ul class="description-list">
+                  <li>- Provided comprehensive technical support to Yale staff and students, including software troubleshooting and hardware repairs.</li>
+                  <li>- Collaborated with fellow technologists to diagnose and repair laptops, ensuring effective and timely solutions.</li>
+                  <li>- Enhanced customer service skills by efficiently addressing a wide range of technical issues - often in a fast paced and high pressure environment</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </section>
+      </article>
+
+      <article class="projects" data-page="projects">
+        <header>
+          <h2 class="h2 article-title">
+            <ion-icon name="construct-outline"></ion-icon> Projects
+          </h2>
+        </header>
+        <section class="timeline" id="projects-container">
+          <ol class="timeline-list">
+            <li class="timeline-item project-item">
+              <h4 class="h4 project-title">Savor Share</h4>
+              <p class="project-duration">July 2025</p>
+              <p class="project-description">Built a multi-user recipe sharing platform with Vue featuring JWT auth, GraphQL CRUD, Hasura, and Golang. Integrated a payment gateway called 'Chapa' for paid recipe access. Handled client-side form validation (Vee-Validate), image uploads (Cloudinary), and protected routes with Nuxt middleware.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Vue</span>
+                <span class="tech-tag">JWT</span>
+                <span class="tech-tag">GraphQL</span>
+                <span class="tech-tag">Hasura</span>
+                <span class="tech-tag">Golang</span>
+                <span class="tech-tag">Vee-Validate</span>
+                <span class="tech-tag">Cloudinary</span>
+                <span class="tech-tag">Nuxt</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">Tailwind CSS</span>
+              </div>
+            </li>
+            <li class="timeline-item project-item">
+              <h4 class="h4 project-title">Pickup Sports</h4>
+              <p class="project-duration">March 2025</p>
+              <p class="project-description">Built a full-stack web app for organizing and joining pickup sports games using Django and React. Designed backend architecture with RESTful APIs, database models and CAS for authentication. Integrated Google Map API for location accuracy.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Django REST Framework</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Google Map API</span>
+                <span class="tech-tag">CAS Authentication</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+              </div>
+            </li>
+            <li class="timeline-item project-item">
+              <h4 class="h4 project-title">LaTeX-like Macro Processor</h4>
+              <p class="project-duration">Sep 2023</p>
+              <p class="project-description">Developed a robust TeX-like macro processor in C, practicing manual memory management, parsing, debugging with Valgrind and GDB, and handling complex macro expansions.</p>
+              <div class="project-tech">
+                <span class="tech-tag">C</span>
+                <span class="tech-tag">Valgrind</span>
+                <span class="tech-tag">GDB</span>
+              </div>
+            </li>
+          </ol>
+        </section>
+      </article>
+
+      <article class="skills" data-page="skills">
+        <header>
+          <h2 class="h2 article-title">
+            <ion-icon name="build-outline"></ion-icon> Technical Skills
+          </h2>
+        </header>
+        <section class="skills-container" id="technical-skills-container">
+          <div class="skills-group">
+            <h3 class="skills-category">Technical Skills</h3>
+            <ul class="skills-list">
+              <li class="skill-item">Python</li>
+              <li class="skill-item">C</li>
+              <li class="skill-item">C++</li>
+              <li class="skill-item">Golang</li>
+              <li class="skill-item">SQL</li>
+              <li class="skill-item">HTML</li>
+              <li class="skill-item">CSS</li>
+              <li class="skill-item">JavaScript</li>
+              <li class="skill-item">Racket</li>
+              <li class="skill-item">VS Code</li>
+              <li class="skill-item">Git</li>
+              <li class="skill-item">GitHub</li>
+              <li class="skill-item">Valgrind</li>
+              <li class="skill-item">GDB</li>
+              <li class="skill-item">Bash</li>
+              <li class="skill-item">SQLite</li>
+              <li class="skill-item">React</li>
+              <li class="skill-item">Django</li>
+              <li class="skill-item">PostgreSQL</li>
+              <li class="skill-item">Vue</li>
+              <li class="skill-item">Vee-validate</li>
+              <li class="skill-item">Hasura</li>
+              <li class="skill-item">GraphQL</li>
+              <li class="skill-item">Nuxt</li>
+              <li class="skill-item">Apollo</li>
+              <li class="skill-item">Tailwind CSS</li>
+              <li class="skill-item">Docker</li>
+              <li class="skill-item">Docker Compose</li>
+              <li class="skill-item">JMP Pro</li>
+              <li class="skill-item">Full Stack Development</li>
+              <li class="skill-item">Algorithms and Complexity Analysis</li>
+              <li class="skill-item">Systems Programming</li>
+              <li class="skill-item">Data Analysis</li>
+              <li class="skill-item">Quantitative Research</li>
+            </ul>
+          </div>
+        </section>
+      </article>
+
+      <article class="teaching" data-page="teaching">
+        <header>
+          <h2 class="h2 article-title">
+            <ion-icon name="school-outline"></ion-icon> Teaching Experience
+          </h2>
+        </header>
+        <section class="timeline" id="teaching-container">
+          <ol class="timeline-list">
+            <li class="timeline-item teaching-item">
+              <h4 class="h4 teaching-role">Undergraduate Teaching Assistant</h4>
+              <p class="teaching-institution">Yale Math Department</p>
+              <p class="teaching-duration">Aug 2024 - Present</p>
+              <div class="courses-container">
+                <h4>Courses:</h4>
+                <ul>
+                  <li>Multivariate Calculus</li>
+                  <li>Single Variable Calculus</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <script>
+    'use strict';
+
+    // Toggle sidebar contacts
+    const sidebar = document.querySelector("[data-sidebar]");
+    const sidebarBtn = document.querySelector("[data-sidebar-btn]");
+    const sidebarMore = document.querySelector("[data-sidebar-more]");
+
+    sidebarBtn.addEventListener("click", function () {
+      sidebarMore.classList.toggle("active");
+      sidebarBtn.querySelector("span").textContent = sidebarMore.classList.contains("active") ? "Hide Contacts" : "Show Contacts";
+    });
+
+    // Handle navigation links
+    const navigationLinks = document.querySelectorAll("[data-nav-link]");
+    const pages = document.querySelectorAll("[data-page]");
+
+    navigationLinks.forEach((link) => {
+      link.addEventListener("click", function () {
+        navigationLinks.forEach(navLink => navLink.classList.remove("active"));
+        this.classList.add("active");
+
+        const pageName = this.textContent.toLowerCase().trim();
+        pages.forEach(page => page.classList.remove("active"));
+        const targetPage = document.querySelector(`[data-page="${pageName}"]`);
+        if (targetPage) {
+          targetPage.classList.add("active");
+          window.scrollTo(0, 0);
+        }
+      });
+    });
+  </script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
